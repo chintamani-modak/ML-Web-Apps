@@ -1,0 +1,3 @@
+Welcome to a riveting exploration of Photoplethysmography (PPG), spotlighted on Medium under 'Google TensorFlow AI/ML Applications'. As a Data scientist & AI Consultant, I invite you to journey through the dynamic landscape of machine learning. We'll leverage the formidable capabilities of Google's TensorFlow and the streamlined efficacy of the Flask micro web framework, developed by Armin Ronacher, to innovate web application deployment and creation.
+Here we are tackling a machine learning project aimed at predicting stress levels using state-of-the-art techniques.
+Our project encompasses several critical stages: project scoping, data collection and preprocessing, modeling, and ultimately, the deployment of a Flask-powered web application.
