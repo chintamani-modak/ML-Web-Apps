@@ -1,0 +1,2 @@
+Here We are harnessing Google TensorFlow to create sophisticated disease detection models, which are then integrated into a user-friendly web app developed with Streamlit. 
+This app is deployed on the GCP cloud, ensuring it can be accessed anywhere by the agricultural community. This approach not only enhances plant health but also supports sustainable agriculture practices by providing critical, real-time data to those who need it most.
