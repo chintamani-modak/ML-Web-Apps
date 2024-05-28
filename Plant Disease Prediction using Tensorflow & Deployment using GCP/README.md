@@ -1,35 +1,13 @@
-# ML-based tool for predicting car price
-Dataset used: https://www.kaggle.com/code/mohaiminul101/car-price-prediction/data
+**Revolutionizing Plant Health: A Leap Forward with Plant Disease Diagnostics**
 
-Production-level examples with similar ML model: 
-https://www.autotrader.ca/a/honda/accord%20sedan/toronto/ontario/5_55980460_on20080611094525059/?showcpo=ShowCpo&ncse=no&ursrc=pl&urp=3&urm=8&sprx=100 
-
-- wrapped into Streamlit App
-- basic logging with Loguru
-- Containerized with Docker: deploy anywhere!
-
-## Running sequence
-
-1.Build the image locally
-
-`docker build -t carpricing:latest . -f Dockerfile`
-
-For m1/m2 Macs to later deploy to Linux server:
-
-`docker buildx build --platform=linux/arm64 . -t carpricing:latest`
-
-2. Run & test locally
-
-`docker run -p 8501:8501 carpricing:latest`
-
-3. Set up the `gcloud` CLI
-
-4. Change into directory with all the files
-
-5. Deploy to GoogleCloud
-`gcloud app delploy app.yaml`
-
-6. Open the app in browser
-`gcloud app browse`
-
-7. Switch off the app in UI
+**The Challenge**
+- As the global population approaches 9 billion by 2050, the pressure is on to increase food production by an estimated 70%. Despite advancements, infectious diseases continue to slash agricultural yields by up to 40% on average, with some farmers in developing countries facing total losses. The necessity for innovative solutions has never been greater.
+  
+**The Opportunity**
+- The explosive growth of smartphones globally over the past five years presents a unique opportunity. These devices are more than just communication tools; they are gateways to empowering farmers worldwide with cutting-edge technology. Our project focuses on transforming smartphones into advanced plant disease detection systems, utilizing the power of Machine Learning (ML) and Big Data.
+  
+**Our Solution**
+- We are harnessing Google TensorFlow to create sophisticated disease detection models, which are then integrated into a user-friendly web app developed with Streamlit. This app is deployed on the AWS cloud, ensuring it can be accessed anywhere by the agricultural community. This approach not only enhances plant health but also supports sustainable agriculture practices by providing critical, real-time data to those who need it most.
+  
+**The Impact**
+- By enabling farmers to detect diseases early and accurately, we are significantly reducing potential yield losses and ensuring more stable food supplies. This project is not just about technology; it's about creating a sustainable future and supporting diverse communities in their efforts to grow food more effectively.
