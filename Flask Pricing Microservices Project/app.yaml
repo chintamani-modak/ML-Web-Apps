@@ -1,0 +1,12 @@
+runtime: python39
+
+entrypoint: gunicorn -b :$PORT services.pricing:app
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 2
+  
+resources:
+  cpu: 2
+  memory_gb: 4.6
+  disk_size_gb: 40
