@@ -1,0 +1,2 @@
+In this project, we'll walk through the process of creating a Flask microservice that integrates machine learning to predict product prices. We'll use the DummyJSON API for our product data and deploy the application to Google Cloud Platform (GCP) using App Engine. 
+This guide will help you combine web development, machine learning, and cloud deployment skills, essential for any aspiring data scientist or software engineer. 
