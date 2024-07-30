@@ -124,7 +124,7 @@ Enter the URL: http://localhost:8080/products/1 (Replace 1 with the actual produ
 Click Send.
 
 ### Web App Deployment Steps
-## 1) Create the pricing-flask-artifact-registry repository in Google Cloud Platform. We can use its URI in your deployment configurations by following these steps:
+### 1) Create the pricing-flask-artifact-registry repository in Google Cloud Platform. We can use its URI in your deployment configurations by following these steps:
 1. Locate the Repository URI
 First, we need to find the URI of your newly created repository. We can find this in the Google Cloud Console under Artifact Registry. The URI typically looks like this:
 
@@ -132,10 +132,10 @@ Copy code
 asia.gcr.io/project-id/pricing-flask-artifact-registry
 Replace project-id with your actual Google Cloud project ID.
 
-## 2) Update Deployment Scripts
+### 2) Update Deployment Scripts
 Use this URI in our deployment scripts where we define the Docker image to be pushed. Here’s how we might adjust our Docker commands:
 
-## 3) Building & Pushing our Docker image:
+### 3) Building & Pushing our Docker image:
 
 Copy code
 docker build -t asia.gcr.io/project-id/pricing-flask-artifact-registry:latest .
@@ -146,9 +146,9 @@ Copy code
 docker push asia.gcr.io/project-id/pricing-flask-artifact-registry:latest
 Make sure to replace project-id with your actual Google Cloud project ID and specify the correct tag (in this case, latest).
 
-## 4) To deploy your Docker image on Google Cloud Platform using App Engine and Cloud Build with the newly pushed Docker image URI, follow these steps:
+### 4) To deploy your Docker image on Google Cloud Platform using App Engine and Cloud Build with the newly pushed Docker image URI, follow these steps:
 
-## Step 1: Prepare Your App Engine Environment
+### Step 1: Prepare Your App Engine Environment
 Ensure that your app.yaml file is correctly set up for a custom environment that will use the Docker image. Here's a sample configuration:
 
 cloudbuild.yaml script:
@@ -166,7 +166,7 @@ resources:
 
 network: {}
 
-## Step 2: Configure Cloud Build
+### Step 2: Configure Cloud Build
 Create a cloudbuild.yaml file in your project directory. This file will instruct Cloud Build on how to build and deploy your application using your Docker image.
 
 yaml
@@ -181,7 +181,7 @@ Above configuration does the following:
 - Pulls the latest version of your Docker image.
 - Deploys the application to App Engine.
    
-## Step 3: Trigger the Build
+### Step 3: Trigger the Build
 To trigger the build and deployment process, you need to submit this build to Cloud Build. Run the following command in your project directory where the cloudbuild.yaml file is located:
 
 
@@ -189,7 +189,7 @@ Copy code
 gcloud builds submit --config cloudbuild.yaml
 This command will start the Cloud Build process, which pulls our Docker image and deploys it to App Engine according to our specifications.
 
-## Step 4: Verify Deployment
+### Step 4: Verify Deployment
 Once the build and deployment process is complete, we can check the status and view our application by accessing the App Engine URL provided in the GCP Console under App Engine > Dashboard.
 
 
