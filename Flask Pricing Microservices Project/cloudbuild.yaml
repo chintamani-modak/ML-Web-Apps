@@ -1,0 +1,8 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['pull', 'asia.gcr.io/flask-pricing-microservices4/pricing-flask-artifact-registry:latest']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', '--image-url', 'asia.gcr.io/flask-pricing-microservices4/pricing-flask-artifact-registry:latest']
+timeout: '1600s'
+options:
+  logging: CLOUD_LOGGING_ONLY
